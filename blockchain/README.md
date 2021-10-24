@@ -6,5 +6,7 @@
 - There are public blockchain and private blockchain.
 - In blockchain network, there are nodes. Each nodes have the copy of ledger
 - Private blockchain have the authorization/authentication service (aka membership service provider)
-- Have identity of user, achieved by PKI provide public key -> identity of the user on the network. And the private key store in wallet (wallet is a collection of the user credentials)
-- People interact with blockchain through event
+- Have identity of user, achieved by PKI provide public key -> identity of the user on the network. And the private key store in wallet (**wallet is a collection of the user credentials**)
+- People interact with blockchain through **event**
+
+##
