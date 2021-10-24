@@ -22,3 +22,7 @@
 - A digital wallet is a computer application that represents a traditional wallet. It gives the user the ability to store and transact cryptocurrencies through the Internet.
 ### Public Key Infrastructure (PKI)
 - Public Key Infrastructure is the identity management system for instilling trust into the electronic transfers of information or value. It is the technology used to authenticate users and information by issuing a set of key pairs (public and private).
+
+### **In decentralized ledger, it's hard to cheat (51% of copy need to be updated). Event though a node come down, there still other nodes hold the transaction history**.
+
+## **Blockchain = concept of ledger+distributed system**
