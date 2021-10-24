@@ -1,4 +1,4 @@
-## **Blockchain component**
+# **Blockchain component**
 
 - Ledger (associate with accountant) - a collection of transaction. In blockchain, the ledger is distributed (or decentralize) -> no one/ everyone own the ledger.
 - A transaction is compose of sender, receiver and the assets
@@ -26,3 +26,23 @@
 ### **In decentralized ledger, it's hard to cheat (51% of copy need to be updated). Event though a node come down, there still other nodes hold the transaction history**.
 
 ## **Blockchain = concept of ledger+distributed system**
+
+<br>
+
+# **Cryptography and trust**
+
+## **Basic term of cryptography**
+### Cryptography
+- Cryptography is a technique used to secure the communication between two parties from a third. The term cryptography is derived from two ancient greek terms, “kryptos” which means “hidden” and “graphein” which means “to write”.
+### Secret
+- The data which we are trying to protect.
+### Key
+- A piece of data used for encrypting and decrypting the secret.
+### Function
+- The process or function used to encrypt the secret.
+### Cipher
+- The encrypted secret data, the digital secret, the output of the mathematical function or a cryptographic algorithm.
+### Encryption
+- This is the process from plain text (ordinary text) to cipher text (random sequence of bits).
+### Decryption
+- Encryption is the reverse process of converting ciphertext into plain text.
