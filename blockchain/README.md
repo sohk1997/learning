@@ -1,3 +1,55 @@
+The content is from LinuxFoundationX LFS170x Blockchain: Understanding Its Uses and Implications. To have the best expirence, please go to edx.org and support Linux foundation
+- [**Blockchain component**](#blockchain-component)
+  - [**Basic terms of blockchain**](#basic-terms-of-blockchain)
+    - [Ethereum](#ethereum)
+    - [Smart Contracts](#smart-contracts)
+    - [Public Blockchains](#public-blockchains)
+    - [Private Blockchains](#private-blockchains)
+    - [Digital Wallet](#digital-wallet)
+    - [Public Key Infrastructure (PKI)](#public-key-infrastructure-pki)
+    - [**In decentralized ledger, it's hard to cheat (51% of copy need to be updated). Event though a node come down, there still other nodes hold the transaction history**.](#in-decentralized-ledger-its-hard-to-cheat-51-of-copy-need-to-be-updated-event-though-a-node-come-down-there-still-other-nodes-hold-the-transaction-history)
+  - [**Blockchain = concept of ledger+distributed system**](#blockchain--concept-of-ledgerdistributed-system)
+- [**Cryptography and trust**](#cryptography-and-trust)
+  - [**Basic term of cryptography**](#basic-term-of-cryptography)
+    - [Cryptography](#cryptography)
+    - [Secret](#secret)
+    - [Key](#key)
+    - [Function](#function)
+    - [Cipher](#cipher)
+    - [Encryption](#encryption)
+    - [Decryption](#decryption)
+  - [**Byzantine Fault Tolerance -> the idea make blockchain become more secure**](#byzantine-fault-tolerance---the-idea-make-blockchain-become-more-secure)
+- [**Types of Cryptography in Blockchain**](#types-of-cryptography-in-blockchain)
+    - [Public Key Cryptography](#public-key-cryptography)
+    - [Zero-Knowledge Proofs](#zero-knowledge-proofs)
+    - [Hash Functions](#hash-functions)
+    - [Merkle Trees](#merkle-trees)
+  - [**Zero-Knowledge Proofs**](#zero-knowledge-proofs-1)
+  - [A comparision of Ethereum vs Hyperledger Fabric](#a-comparision-of-ethereum-vs-hyperledger-fabric)
+- [**Blockchain transparency and immutability**](#blockchain-transparency-and-immutability)
+- [**Blockchain function**](#blockchain-function)
+  - [**Onion model on blockchain:**](#onion-model-on-blockchain)
+  - [**Smart contract**:](#smart-contract)
+  - [**Blockchain security**](#blockchain-security)
+  - [**Different types of blockchain**](#different-types-of-blockchain)
+    - [Benefit of public blockchain:](#benefit-of-public-blockchain)
+    - [Benefit of private blockchain:](#benefit-of-private-blockchain)
+    - [Some point to think of using blockchain or not:](#some-point-to-think-of-using-blockchain-or-not)
+  - [**Consensus**](#consensus)
+    - [Proof of work:](#proof-of-work)
+    - [Proof of stake:](#proof-of-stake)
+    - [Bitcoin consensus model:](#bitcoin-consensus-model)
+    - [Etherum consensus model:](#etherum-consensus-model)
+    - [Hyperledger Fabric Consensus Model:](#hyperledger-fabric-consensus-model)
+    - [Corda Consensus model:](#corda-consensus-model)
+  - [**Blockchain and gorvernance**](#blockchain-and-gorvernance)
+    - [On-chain vs off-chain gorvernance](#on-chain-vs-off-chain-gorvernance)
+  - [Blockchain gorvernance stategry:](#blockchain-gorvernance-stategry)
+  - [Advanced blockchain anonymity techniques:](#advanced-blockchain-anonymity-techniques)
+  - [Some case study of advanced anomyty techniques:](#some-case-study-of-advanced-anomyty-techniques)
+  - [Trust in blockchain](#trust-in-blockchain)
+  - [Blockchain Immutability Concept](#blockchain-immutability-concept)
+
 # **Blockchain component**
 
 - Ledger (associate with accountant) - a collection of transaction. In blockchain, the ledger is distributed (or decentralize) -> no one/ everyone own the ledger.
@@ -251,3 +303,20 @@ Let's recap the features of a blockchain that establishes trust:
 - Storing data in the blockchain is through cryptographic functions.
 - Private key/public key.
 - Collaboration through consensus.
+
+## Blockchain Immutability Concept
+There are many different variables, but the main one is consensus. In a blockchain, it refers to the logs of transactions which are created by consensus among the chain’s participants. The basic notion is that once a blockchain transaction has received a sufficient level of validation and posted on the chain, it can almost never be replaced, reversed or edited.
+
+If someone wanted to undermine the immutability of the Bitcoin blockchain, here’s how they would do it:
+
+- First, they would install more mining capacity than the rest of the network put together, creating a so-called “51% attack”.
+- Second, instead of openly participating in the mining process, they would mine their own “secret branch", containing whichever transactions they approve and censoring the rest.
+- Finally, when the desired amount of time has passed, they would anonymously broadcast their secret branch to the network.
+
+<br>
+
+Since the attacker has more mining power than the rest of the network, their branch will contain more Proof of Work than the public one. Every Bitcoin node will therefore switch over since the rules of Bitcoin state that the more difficult branch wins. Any previously confirmed transactions not in the secret branch will be reversed and the Bitcoin they spent could be sent elsewhere. The computing power required to achieve this is enormous and probably only theoretical, but it’s important to consider.
+
+<br>
+
+One other less technical and malicious example would be from the Ethereum hard fork that directly happened after the DAO hack. In this example, the majority of the Ethereum nodes in the network decided to update the software preventing those hackers from withdrawing the cryptocurrency “earned” (stolen). This update could not be enforced, since every Ethereum user controls their own computer. Nonetheless, it was publicly supported by Vitalik Buterin, Ethereum’s founder, as well as many other community leaders. As a result, most users complied, and the blockchain with the new rules kept the name "Ethereum". A minority disagreed with the change and continued the blockchain according to its original rules, earning the title "Ethereum Classic".
